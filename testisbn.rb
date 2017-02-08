@@ -14,5 +14,8 @@ class TestISBN < Minitest::Test
 	def test_is_good_checksum
 		assert_equal(true, correct_checksum?("877195869x"))
 	end
+	def test_is_valid_ISBN
+		assert_equal(true, is_valid_ISBN?("877195869x"))
+	end
 
  end
