@@ -30,4 +30,8 @@ def correct_checksum?(num)
 	else
 		calculatechecksum(num) == num[length - 1]
 	end	
+
+end
+def valid_number(isbnnum) 
+	false
 end
