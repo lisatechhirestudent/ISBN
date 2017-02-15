@@ -12,7 +12,8 @@ end
 post '/isbnnum' do
 #	num = params['ISBN']
 	num = params[:ISBN]
-	pgm_results =
-		valid_number(num)
-	"Answer is #{pgm_results}"
+	@pgm_results =
+		valid_number (num)
+	#{}"Answer is #{pgm_results}"
+	erb :isbn_input
 end
